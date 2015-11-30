@@ -3,6 +3,10 @@ package me.originqiu.grildlayout;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.ImageView;
+
+import java.util.ArrayList;
 
 import me.originqiu.library.GridLayout;
 
@@ -18,6 +22,10 @@ public class SingleActivity extends AppCompatActivity {
         setContentView(R.layout.activity_single);
         mGridLayout = (GridLayout) findViewById(R.id.grid_box);
         mGridLayout.setChildCount(7);
+
+        ArrayList<View> views = mGridLayout.getAllChildView();
+        ImageView imageView = (ImageView) views.get(2);
+        imageView.setBackgroundColor(getResources().getColor(android.R.color.holo_green_dark));
         
     }
 }

@@ -87,8 +87,7 @@ public class GridLayout extends ViewGroup {
         
         // Get the height based on measure specs
         heightSize = getDefaultSize(0, heightMeasureSpec);
-        
-        int majorDimension = Math.max(widthSize, heightSize);
+        int majorDimension = widthSize;
         // Measure all child views
         int blockDimension = majorDimension / mColumnCount;
         int blockSpec = MeasureSpec.makeMeasureSpec(blockDimension,
@@ -129,14 +128,14 @@ public class GridLayout extends ViewGroup {
     protected void dispatchDraw(Canvas canvas) {
         super.dispatchDraw(canvas);
         // draw grid separator
-        for (int i = 0; i <= getWidth(); i += (getWidth() / mColumnCount)) {
-            canvas.drawLine(i, 0, i, getHeight(), mGridPaint);
+        for (int i = getWidth() / mColumnCount; i < getWidth(); i += (getWidth() / mColumnCount)) {
+            canvas.drawLine(i, 1, i, getHeight(), mGridPaint);
         }
         int count = childCount % mColumnCount == 0 ? childCount / mColumnCount
                                                    : childCount / mColumnCount
                                                      + 1;
-        for (int i = 0; i <= getHeight(); i += (getHeight() / count)) {
-            canvas.drawLine(0, i, getWidth(), i, mGridPaint);
+        for (int i = getHeight() / count; i < getHeight(); i += (getHeight() / count)) {
+            canvas.drawLine(1, i, getWidth(), i, mGridPaint);
         }
     }
     

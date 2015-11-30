@@ -1,6 +1,6 @@
 # GridLayout 
 ![](https://img.shields.io/github/tag/qiugang/GridLayout.svg?label=JitPack)
- 修改自Dave Smith大神[custom-view-examples](https://github.com/devunwired/custom-view-examples/blob/master/app/src/main/java/com/example/customview/widget/BoxGridLayout.java)的例子，你可以用它可以轻松实现新浪微博图片区域的效果。
+修改自Dave Smith大神[custom-view-examples](https://github.com/devunwired/custom-view-examples/blob/master/app/src/main/java/com/example/customview/widget/BoxGridLayout.java)的例子，你可以用它可以轻松实现新浪微博图片区域的效果。
 ### Usage
 
 ```groovy
@@ -15,7 +15,7 @@ dependencies {
 
 ### Step 1
 
-* 在gridview中添加childview
+* 在gridlayout中添加childview
 
 ```xml
 <me.originqiu.library.GridLayout

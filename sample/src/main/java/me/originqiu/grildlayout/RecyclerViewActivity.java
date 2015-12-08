@@ -1,8 +1,6 @@
 package me.originqiu.grildlayout;
 
-import android.app.ListActivity;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -16,7 +14,8 @@ import java.util.ArrayList;
 import me.originqiu.library.GridLayout;
 
 /**
- * Created by OriginQiu on 2015/11/27.
+ *  GridLayout use in RecyclerView Sample
+ *  Created by OriginQiu on 2015/11/27.
  */
 public class RecyclerViewActivity extends AppCompatActivity {
 
@@ -66,7 +65,7 @@ public class RecyclerViewActivity extends AppCompatActivity {
                 holder.mGridLayout.setChildCount(9);
             }
             
-            holder.mGridLayout.setChildClickCallback(new GridLayout.ChildClick() {
+            holder.mGridLayout.setChildViewClickCallback(new GridLayout.ChildViewClick() {
                 @Override
                 public void onChildClick(int position) {
                     Toast.makeText(RecyclerViewActivity.this,

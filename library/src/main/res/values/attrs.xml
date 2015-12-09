@@ -4,5 +4,7 @@
         <attr name="separatorWidth" format="dimension" />
         <attr name="separatorColor" format="color" />
         <attr name="numColumns" format="integer" />
+        <attr name="oneViewWidth" format="dimension"/>
+        <attr name="oneViewHeight" format="dimension"/>
     </declare-styleable>
 </resources>

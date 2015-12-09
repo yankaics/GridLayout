@@ -37,7 +37,7 @@ dependencies {
 
         <include layout="@layout/layout_image"/>
 
-    </me.originqiu.library.GridLayout>
+</me.originqiu.library.GridLayout>
 ```
 
 ### Step 2

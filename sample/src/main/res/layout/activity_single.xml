@@ -12,6 +12,8 @@
         android:background="#fff"
         android:layout_marginRight="16dp"
         android:layout_marginLeft="16dp"
+        app:oneViewHeight="200dp"
+        app:oneViewWidth="200dp"
         app:numColumns="3"
         app:separatorWidth="2dp">
 
